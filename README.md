@@ -9,10 +9,10 @@ partidos y otro de resultados, el primero correspondiente a una ronda y el otro 
 los pronósticos de una persona1.
 
 Cada ronda debe tener una cantidad fija de partidos, por ejemplo 2. El programa debe:
-- Estar subido en un repositorio de GIT
-- Tomar como argumento 2 rutas a cada archivo que se necesita
-- Al leer las líneas de los archivos debe instanciar objetos de las clases propuestas
-- Debe imprimir por pantalla el puntaje de la persona
+- Estar subido en un repositorio de GIT :white_check_mark:
+- Tomar como argumento 2 rutas a cada archivo que se necesita :white_check_mark: ?
+- Al leer las líneas de los archivos debe instanciar objetos de las clases propuestas :x:
+- Debe imprimir por pantalla el puntaje de la persona :x:
 
 ## Importante
 Se debe considerar la forma de identificar los partidos de forma unívoca para su correcto
