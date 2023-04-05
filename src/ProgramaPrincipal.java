@@ -1,3 +1,4 @@
+import javax.swing.text.html.parser.Parser;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.Reader;
@@ -9,15 +10,6 @@ public class ProgramaPrincipal {
     //probar las clases creadas
 
     public static void main(String[] args) {
-        //Crear un equipo
-
-        Equipo equipo1 = new Equipo("Argentina", "Messi campeon del mundo");
-        Equipo equipo2 = new Equipo("Francia", "segundo francia");
-
-        //Crear un partido
-        Partido partido1 = new Partido(equipo1, equipo2, 3, 2);
-
-        System.out.printf(partido1.toString());
 
         // leer archivos en java
 
@@ -31,16 +23,37 @@ public class ProgramaPrincipal {
         Path obtenerResultados= Paths.get(rutaPartidos);
 
         System.out.println("** RESULTADOS **");
-
+        Ronda ronda1= new Ronda("1");
         try (BufferedReader reader = Files.newBufferedReader(obtenerResultados)){
             String line;
             while((line= reader.readLine())!= null){
-                System.out.println(line);
+                String[] parts=line.split(" ");
+                String primerEquipo= parts[0];
+                int golesPrimerEquipo=Integer.parseInt(parts[1]);
+                Equipo equipo1= new Equipo(primerEquipo);
+
+                String segundoEquipo=parts[3];
+                int golesSegundoEquipo=Integer.parseInt(parts[2]);
+                Equipo equipo2= new Equipo(segundoEquipo);
+
+                Partido partido= new Partido(equipo1,equipo2,golesPrimerEquipo,golesSegundoEquipo);
+
+                System.out.println(partido.resultado(equipo1,equipo2,golesPrimerEquipo,golesSegundoEquipo));
+
+                ronda1.addPartido(partido);
+
+
+
+
             }
 
         } catch (IOException error){
             System.out.println("Ha ocurrido un error:" +error);
         }
+
+
+        System.out.println(ronda1);
+
 
         //segundo caso se trata sobre el pronostico
 

@@ -8,6 +8,10 @@ public class Equipo {
         this.descripcion = descripcion;
     }
 
+    public Equipo(String nombre){
+        this.nombre = nombre;
+    }
+
     //Setter y getter de mi clase
     public String getNombre(){
         return nombre;

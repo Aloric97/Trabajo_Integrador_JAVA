@@ -47,6 +47,17 @@ public class Partido {
         this.golesEquipo2 = golesEquipo2;
     }
 
+    //Metodo para mostrar el resultado del partido
+    public String resultado(Equipo equipo1, Equipo equipo2, int golesEquipo1, int golesEquipo2){
+        if (golesEquipo1 > golesEquipo2){
+            return "El ganador es: " + equipo1.getNombre();
+        } else if (golesEquipo1 < golesEquipo2){
+            return "El ganador es: " + equipo2.getNombre();
+        } else {
+            return "Empate";
+        }
+    }
+
     public String toString(){
         return "Partido: " + equipo1.getNombre() + " vs " + equipo2.getNombre() + " " + golesEquipo1 + " - " + golesEquipo2;
     }
