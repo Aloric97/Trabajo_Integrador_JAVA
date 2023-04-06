@@ -16,7 +16,6 @@ public class Ronda {
     }
 
 
-
     public void setNro(String nro){
         this.nro = nro;
     }
@@ -34,8 +33,12 @@ public class Ronda {
     }
 
     public String toString(){
-        return "Ronda: " + nro + " " + partidos;
+        return "Ronda: " + nro + "\n " + partidos;
     }
 
+    //obtener el tamaño
+    public int size(){
+        return partidos.size();
+    }
 
 }

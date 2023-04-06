@@ -3,11 +3,12 @@ public class Pronostico {
     private Partido partido;
     private Equipo equipo;
 
+    private String resultado;
+
 
     //Constructor por defecto
-    public Pronostico(Partido partido, Equipo equipo){
-        this.partido = partido;
-        this.equipo = equipo;
+    public Pronostico(){
+
     }
 
     //Setter y getter de mi clase
@@ -27,7 +28,21 @@ public class Pronostico {
         this.equipo = equipo;
     }
 
+    public String getResultado(){
+        return resultado;
+    }
+
+    public void setResultado(String resultado){
+        this.resultado = resultado;
+    }
+
+    //metodo para guardar calcular el resultado del partido
+
+
+
     public String toString(){
         return "Pronostico: " + partido + " " + equipo;
     }
+
+
 }
