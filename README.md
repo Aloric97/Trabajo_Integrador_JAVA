@@ -10,8 +10,8 @@ los pronósticos de una persona1.
 
 Cada ronda debe tener una cantidad fija de partidos, por ejemplo 2. El programa debe:
 - Estar subido en un repositorio de GIT :white_check_mark:
-- Tomar como argumento 2 rutas a cada archivo que se necesita :white_check_mark: ?
-- Al leer las líneas de los archivos debe instanciar objetos de las clases propuestas :x:
+- Tomar como argumento 2 rutas a cada archivo que se necesita :white_check_mark: 
+- Al leer las líneas de los archivos debe instanciar objetos de las clases propuestas :white_check_mark: 
 - Debe imprimir por pantalla el puntaje de la persona :x:
 
 ## Importante
