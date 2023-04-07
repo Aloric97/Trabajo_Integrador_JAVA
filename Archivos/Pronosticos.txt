@@ -2,4 +2,4 @@ argentina 1 0 0 croacia
 venezuela 0 0 1 uruguay
 chile 0 1 0 paraguay
 brasil 1 0 0 peru
-bolivia 1 0 1 ecuador
+bolivia 1 0 0 ecuador

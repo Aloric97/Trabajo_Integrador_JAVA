@@ -1,9 +1,11 @@
+import java.util.Objects;
+
 public class Pronostico {
 
     private Partido partido;
     private Equipo equipo;
 
-    private String resultado;
+    private ResultadoEnum resultado;
 
 
     //Constructor por defecto
@@ -12,37 +14,25 @@ public class Pronostico {
     }
 
     //Setter y getter de mi clase
-    public Partido getPartido(){
-        return partido;
-    }
 
     public Equipo getEquipo(){
         return equipo;
     }
 
-    public void setPartido(Partido partido){
-        this.partido = partido;
-    }
 
     public void setEquipo(Equipo equipo){
         this.equipo = equipo;
     }
 
-    public String getResultado(){
+    public ResultadoEnum getResultado(){
         return resultado;
     }
 
-    public void setResultado(String resultado){
+    public void setResultado(ResultadoEnum resultado){
         this.resultado = resultado;
     }
 
-    //metodo para guardar calcular el resultado del partido
 
-
-
-    public String toString(){
-        return "Pronostico: " + partido + " " + equipo;
-    }
-
+    //sumar punto por cada acierto
 
 }

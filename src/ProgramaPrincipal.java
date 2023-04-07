@@ -43,11 +43,9 @@ public class ProgramaPrincipal {
                 //crear un objeto partido
                 Partido partido= new Partido(equipo1,equipo2,golesPrimerEquipo,golesSegundoEquipo);
 
+                System.out.println(partido.resultado(equipo1));
                 //agregar el partido a la ronda
                 ronda1.addPartido(partido);
-
-                //probar el metodo resultado
-                System.out.println(partido.resultado(equipo1));
 
             }
 
@@ -58,14 +56,22 @@ public class ProgramaPrincipal {
 
         //segundo caso se trata sobre el pronostico
 
+
         String RutaPronostico= "Archivos/Pronosticos.txt";
         Path obtenerPronostico=Paths.get(RutaPronostico);
 
+
+        int puntos=0;
         System.out.println("** PRONOSTICO **");
 
         try (BufferedReader reader=Files.newBufferedReader(obtenerPronostico)){
             String line;
-            while((line=reader.readLine())!=null){
+
+            //necesito un while para recorrer el archivo y tambien para recorer el array de la ronda
+
+
+
+            while((line=reader.readLine())!=null) {
 
                 String[] parts=line.split(" ");
 
@@ -77,6 +83,30 @@ public class ProgramaPrincipal {
                 //agrego el string a un nuevo objeto de tipo equipo
                 Equipo equipo1= new Equipo(primerEquipo);
 
+                //agrego el equipo al pronostico
+                pronostico.setEquipo(equipo1);
+
+                //guardar el resultado del partido
+                if (parts[1].equals("1")){
+                    pronostico.setResultado(ResultadoEnum.GANADOR);
+                }else if (parts[3].equals("1")){
+                    pronostico.setResultado(ResultadoEnum.PERDEDOR);
+                }else{
+                    pronostico.setResultado(ResultadoEnum.EMPATE);
+                }
+
+
+                for (int i=0; i<ronda1.size(); i++){
+                    if (ronda1.getPartidos().get(i).getEquipo1().getNombre().equals(pronostico.getEquipo().getNombre())) {
+                        if (ronda1.getPartidos().get(i).resultado(ronda1.getPartidos().get(i).getEquipo1()).equals(pronostico.getResultado())) {
+                            System.out.println("El usuario ha acertado");
+                            puntos++;
+
+                        } else {
+                            System.out.println("El usuario ha fallado");
+                        }
+                    }
+                }
 
 
 
@@ -87,6 +117,13 @@ public class ProgramaPrincipal {
 
         }
 
+        System.out.println("\n** RESULTADOS **");
+        System.out.println("El usuario ha obtenido " + puntos + " puntos");
+
     }
+
+
+
+
 
 }

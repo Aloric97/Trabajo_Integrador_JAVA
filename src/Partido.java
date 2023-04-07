@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Partido {
 
     private Equipo equipo1;
@@ -66,5 +68,6 @@ public class Partido {
             return ResultadoEnum.EMPATE;
         }
     }
+
 
 }
