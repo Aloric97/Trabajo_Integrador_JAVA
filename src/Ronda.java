@@ -12,7 +12,7 @@ public class Ronda {
 
     //Setter y getter de mi clase
     public String getNro(){
-        return nro;
+        return this.nro;
     }
 
 
@@ -21,7 +21,7 @@ public class Ronda {
     }
 
     public List<Partido> getPartidos(){
-        return partidos;
+        return this.partidos;
     }
 
     public void setPartidos(List<Partido> partidos){
