@@ -17,7 +17,7 @@ public class Pronostico {
     //Setter y getter de mi clase
 
     public Equipo getEquipo(){
-        return equipo;
+        return this.equipo;
     }
 
 
@@ -26,7 +26,7 @@ public class Pronostico {
     }
 
     public ResultadoEnum getResultado(){
-        return resultado;
+        return this.resultado;
     }
 
     public void setResultado(ResultadoEnum resultado){
