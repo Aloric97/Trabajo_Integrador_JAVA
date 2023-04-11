@@ -8,7 +8,7 @@ public class Equipo {
 
     //Setter y getter de mi clase
     public String getNombre(){
-        return nombre;
+        return this.nombre;
     }
 
 
