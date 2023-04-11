@@ -8,6 +8,7 @@ public class Pronostico {
     private ResultadoEnum resultado;
 
 
+
     //Constructor por defecto
     public Pronostico(){
 
@@ -33,6 +34,5 @@ public class Pronostico {
     }
 
 
-    //sumar punto por cada acierto
 
 }

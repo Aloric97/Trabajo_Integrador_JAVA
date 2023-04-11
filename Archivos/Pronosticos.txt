@@ -1,5 +1,5 @@
-argentina 1 0 0 croacia
+argentina 0 0 1 croacia
 venezuela 0 0 1 uruguay
 chile 0 1 0 paraguay
-brasil 1 0 0 peru
-bolivia 1 0 0 ecuador
+brasil 0 1 0 peru
+bolivia 0 0 1 ecuador
