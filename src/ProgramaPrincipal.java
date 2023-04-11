@@ -19,7 +19,7 @@ public class ProgramaPrincipal {
         System.out.println("\n********************************");
         System.out.println("Prueba de archivos:\n");
 
-        // primer caso para los resultados
+        // primer caso para el archivo resultados
         String rutaPartidos = "Archivos/Partidos.txt";
 
         Path obtenerResultados = Paths.get(rutaPartidos);
@@ -51,7 +51,7 @@ public class ProgramaPrincipal {
         }
 
 
-        //segundo caso se trata sobre el pronostico
+        //segundo caso se trata sobre el archivo pronosticos
 
 
         String RutaPronostico = "Archivos/Pronosticos.txt";
