@@ -1,5 +1,8 @@
-argentina 0 0 1 croacia
-venezuela 0 0 1 uruguay
-chile 0 1 0 paraguay
-brasil 0 1 0 peru
-bolivia 0 0 1 ecuador
+Qatar 1 0 0 Ecuador
+Inglaterra 0 1 0 Iran
+Argentina 0 0 1 Arabia
+Mexico 0 1 0 Polonia
+Francia 1 0 0 Australia
+Alemania 1 0 0 Japon
+Brasil 1 0 0 Serbia
+Venezuela 0 1 0 Uruguay
