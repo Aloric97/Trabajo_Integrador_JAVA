@@ -17,20 +17,20 @@ public class Partido {
 
     //Setter y getter de mi clase
     public Equipo getEquipo1(){
-        return equipo1;
+        return this.equipo1;
     }
 
     public Equipo getEquipo2(){
-        return equipo2;
+        return this.equipo2;
     }
 
     public int getGolesEquipo1(){
-        return golesEquipo1;
+        return this.golesEquipo1;
     }
 
 
     public int getGolesEquipo2(){
-        return golesEquipo2;
+        return this.golesEquipo2;
     }
 
     public void setEquipo1(Equipo equipo1){
